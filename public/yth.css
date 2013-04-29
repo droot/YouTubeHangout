@@ -1,0 +1,110 @@
+html, body {
+    height: 100%;
+}
+
+.block {
+    text-align: center;
+    height: 100%;
+
+    /*background: rgb(255,255,255); [> Old browsers <]*/
+    /*background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%); [> FF3.6+ <]*/
+    /*background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(47%,rgba(246,246,246,1)), color-stop(100%,rgba(237,237,237,1))); [> Chrome,Safari4+ <]*/
+    /*background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(246,246,246,1) 47%,rgba(237,237,237,1) 100%); [> Chrome10+,Safari5.1+ <]*/
+    /*background: -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(246,246,246,1) 47%,rgba(237,237,237,1) 100%); [> Opera 11.10+ <]*/
+    /*background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(246,246,246,1) 47%,rgba(237,237,237,1) 100%); [> IE10+ <]*/
+    /*background: linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(246,246,246,1) 47%,rgba(237,237,237,1) 100%); [> W3C <]*/
+    /*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed',GradientType=0 ); [> IE6-9 <]*/
+}
+
+.block:before {
+    content: '';
+    display: inline-block;
+    height: 100%; 
+    vertical-align: middle;
+    margin-right: -0.25em;
+/*	background: #808080; width: 5px;*/
+}
+	  
+.centered {
+    display: inline-block;
+    /*vertical-align: middle;*/
+    width: 50%;
+    padding: 10px 15px;
+    /*border: #a0a0a0 solid 1px;*/
+    /*background: #f5f5f5;*/
+}
+
+#logo {
+    font-size: 10em;
+    text-shadow: 2px 2px 3px #222;
+    line-height:1;
+}
+
+.box {
+    /*background: #eee;*/
+  }
+
+  .box, .box .antiscroll-inner {
+    /*width: 275px;*/
+    height: 300px;
+    //font: 14px Helvetica, Arial;
+  }
+  
+  .box-wrap {
+    /*margin: 20px 40px;*/
+    /*border: 1px solid #999;*/
+  }
+
+  .box-inner {
+    /*background: #eee;*/
+    /*padding: 10px;*/
+    color: #999;
+    text-shadow: 0 1px 0 #fff;
+  }
+
+  ul {
+	list-style:none;
+    }
+  ul li {
+	padding: 5px 0px 5px 0px;
+	border-bottom: 1px solid lightgray;
+    }
+
+    .activity_list {
+	margin: 0px;	
+	width: 270px;
+    }
+    .activity_list li{
+	text-align:left;
+	border-bottom: 0px solid lightgray;
+    }
+  /*.playlist_item {*/
+	/*padding: 5px 0px 5px 0px;*/
+	/*border-bottom: 1px solid lightgray;*/
+    /*}*/
+
+#activity_bar {
+    position:fixed;
+    /*top:0px;*/
+    bottom:0px;
+    right: 10px;
+    padding: 5px;
+    border: 1px solid lightgray;
+}
+
+@media (max-width: 480px) {
+
+    #logo {
+	font-size: 8em;
+	text-shadow: 2px 2px 3px #222;
+	line-height:1;
+    }
+
+    .centered {
+	width: 80%;
+    }
+
+    h1 {
+	font-size: 1.5em; 
+    }
+}
